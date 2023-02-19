@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Html harjoitussivusto</title>
+
+    <meta lang="fi">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel=stylesheet href="../tyylit/tyyli.css">
+    
+
+
+</head>
+
+
+
+<body onload="kyssari()">
+
+<!-- Header -->
+<div class="header">
+    <h1>Html harjoituksia</h1>
+    <p class="note">Tässä on lyhyesti kokeiltu erilaisia tekniikoita.</p>
+  </div>
+  
+
+
+<!-- Navigointi -->
+
+<nav class="murut">
+    <ol>
+        <li class="muru"><a href="../index.html">Etusivu</a></li>
+        <li class="muru"><a href="../sivut/taulukko.html">Taulukkokokeiluja</a></li>
+        <li class="muru"><a href="../sivut/kuva.html">Kuvakokeiluja</a></li>
+        <li class="muru"><a href="lomake.html" class="active">JavaScript</a></li>
+    </ol>
+</nav>
+
+<div class="navbar">
+    
+        <a href=../index.html class="aktiivi">Etusivu</a>
+        <a href=../sivut/taulukko.html>Taulukkokokeiluja</a>
+        <a href=../sivut/kuva.html>Kuvakokeiluja</a>
+        <a href=lomake.html>JavaScript</a>
+   
+
+</div>
+
+<div class="row">
+    <div class="main">
+        <p>Kertolaskupeli</p>
+        <form name="Kerto">
+            <p id="kysymys"></p>
+            <p> <label for=vastaus> Anna vastaus</label>:
+            <input id=vastaus name=vastaus type=number min=1 max=100 required></p>
+            <p><input 
+                onclick="tarkista(document.getElementById('vastaus').value)" type=button value="Tarkista"></p>
+            <p id="tulo"></p>
+        
+        </form>
+            
+    
+    </div>
+    <div class="side">
+        <a href="https://www.w3schools.com/js/default.asp"> Tästä pääset harjoittelemaan JavaScriptiä!</a>
+    </div>
+</div>
+
+<footer>
+    <p>Author: Jari Kuntola<br>
+    <a href="mailto:jari.kuntola@seamk.fi">jari.kuntola@seamk.fi</a></p>
+  </footer>
+
+
+  <script src="../skriptit/kerto.js"></script>
+   
+  
+           
+
+</body>
+</html>

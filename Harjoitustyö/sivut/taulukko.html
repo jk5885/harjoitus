@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Html harjoitussivusto</title>
+
+    <meta lang="fi">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel=stylesheet href="../tyylit/tyyli.css">
+
+</head>
+
+
+
+<body>
+
+<!-- Header -->
+<div class="header">
+    <h1>Html harjoituksia</h1>
+    <p class="note">Tässä on lyhyesti kokeiltu erilaisia tekniikoita.</p>
+  </div>
+  
+
+
+<!-- Navigointi -->
+
+<nav class="murut">
+    <ol>
+        <li class="muru"><a href="../index.html">Etusivu</a></li>
+        <li class="muru"><a href="taulukko.html" class="active">Taulukkokokeiluja</a></li>
+        <li class="muru"><a href="../sivut/kuva.html">Kuvakokeiluja</a></li>
+        <li class="muru"><a href="../sivut/lomake.html">JavaScript</a></li>
+
+    </ol>
+</nav>
+
+<div class="navbar">
+    
+        <a href=../index.html>Etusivu</a>
+        <a href=taulukko.html>Taulukkokokeiluja</a>
+        <a href=../sivut/kuva.html>Kuvakokeiluja</a>
+        <a href=../sivut/lomake.html >JavaScript</a>
+   
+
+</div>
+
+<div class="row">
+    <div class="main">
+        <h2>Listat</h2>
+    <p>
+        HTML:ssä on kahden tyyppisiä listoja, numeroitu
+        ja numeroimaton. Ensin numeroitu:  
+    </p>
+    <ol>
+        <li>eka kohta</li>
+        <ol>
+            <li>eka kohta</li>
+            <li>toinen kohta</li>
+            <ol>
+                <li>eka kohta</li>
+                <li>toinen kohta</li>
+            </ol>
+        </ol>
+        <li>toinen kohta</li>
+    </ol>
+    <ol>
+        <li>eka kohta</li>
+        <li>toinen kohta</li>
+    </ol>
+    <p>Numeroimaton:</p>
+    <ul>
+        <li>eka kohta</li>
+        <figure>
+            <figcaption> (Figcaption) Numeroitu lista numeroimattoman sisällä</figcaption>
+        
+        <ol>
+            <li>eka kohta</li>
+            <li>toinen kohta</li>
+        </ol>
+    </figure>
+        <li>toinen kohta</li>
+    </ul>
+    <ul>
+        <li>eka kohta</li>
+        <ul>
+            <li>eka kohta</li>
+            <ul>
+                <li>eka kohta</li>
+                <li>toinen kohta</li>
+            </ul>
+            <li>toinen kohta</li>
+        </ul>
+        <li>toinen kohta</li>
+    </ul>
+    </div>
+    <div class="side">
+        
+    
+        <table> <caption>Taulukko</caption>
+            <tr>
+                <td><s>Rivi1</s>, <q>kenttä1</q></td>
+                <td>Rivi1, kenttä2</td>
+            </tr>
+            <tr>
+                <td>Rivi2, kenttä1</td>
+                <td>Rivi2, kenttä2</td>
+            </tr>
+            <tr>
+                <td>Rivi3, kenttä1</td>
+                <td>Rivi3, kenttä2</td>
+            </tr>
+        </table>
+        <table> <caption>Taulukko</caption>
+            <tr>
+                <th>1.otsikko</th>
+                <th>2.otsikko</th>
+                <th>3.otsikko</th>
+            <tr>
+                <td colspan="3"> Yksi rivi</td>
+                
+            </tr>
+            <tr>
+                <td>Rivi2, kenttä1</td>
+                <td>Rivi2, kenttä2</td>
+                <td>Rivi2, kenttä3</td>
+
+            </tr>
+            <tr>
+                <td>Rivi3, kenttä1</td>
+                <td>Rivi3, kenttä2</td>
+                <td>Rivi3, kenttä3</td>
+            </tr>
+        </table>
+
+    </div>
+</div>
+
+<footer>
+    <p>Author: Jari Kuntola<br>
+    <a href="mailto:jari.kuntola@seamk.fi">jari.kuntola@seamk.fi</a></p>
+  </footer>
+
+</body>
+</html>
